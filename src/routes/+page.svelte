@@ -13,6 +13,7 @@
 	<img id="icon" src="./icon.png" alt="icon" />
 	Block Battles
 </h1>
+<svelte:head><title>Block battles</title></svelte:head>
 <main>
 	<p>
 		&nbsp;Welcome to Block Battles, the ultimate gaming experience that has
