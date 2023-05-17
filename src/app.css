@@ -25,5 +25,5 @@ a {
 	font-weight: 700;
 	background: linear-gradient(0.25turn, var(--primary), var(--accent));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: transparent;
 }

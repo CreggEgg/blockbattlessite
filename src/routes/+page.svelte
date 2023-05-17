@@ -1,18 +1,7 @@
 <script lang="ts">
-	import Button from "../components/Button.svelte";
-
-	let y: number;
+	import LinkButton from "../components/LinkButton.svelte";
 </script>
 
-<h1
-	id="header"
-	style="font-size: {y < 50 ? '5rem' : '2rem'}; position: {y < 50
-		? 'relative'
-		: 'sticky'};"
->
-	<img id="icon" src="./icon.png" alt="icon" />
-	Block Battles
-</h1>
 <svelte:head><title>Block battles</title></svelte:head>
 <main>
 	<p>
@@ -74,10 +63,14 @@
 		like no other. Get ready to build, fight, and conquer in the world of Block
 		Battles!
 	</p>
-	<Button style="width: min-content">Join</Button>
-</main>
 
-<svelte:window bind:scrollY={y} />
+	<LinkButton href="/join-server" style="width: max-content;"
+		>Join the server</LinkButton
+	>
+	<LinkButton href="/join-discord" style="width: max-content;"
+		>Join the Discord</LinkButton
+	>
+</main>
 
 <style>
 	#header {
@@ -105,9 +98,10 @@
 		flex-direction: column;
 		padding-bottom: 5%;
 		align-items: center;
+		gap: 2rem;
 	}
 
 	main > p {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 </style>

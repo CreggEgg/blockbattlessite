@@ -1,17 +1,21 @@
 <script lang="ts">
 	import { createEventDispatcher } from "svelte";
 
-	export let style: string | undefined = undefined;
+	export let style: any = undefined;
+	export let href: any = undefined;
+	export let about: any = undefined;
 
 	const dispatch = createEventDispatcher();
 </script>
 
-<button
-	{style}
-	on:click={(e) => {
-		dispatch("click", e);
-	}}><slot /></button
->
+<a {href} {about}>
+	<button
+		{style}
+		on:click={(e) => {
+			dispatch("click", e);
+		}}><slot /></button
+	>
+</a>
 
 <style>
 	button {
@@ -30,5 +34,3 @@
 		background-color: var(--accent);
 	}
 </style>
-
-
