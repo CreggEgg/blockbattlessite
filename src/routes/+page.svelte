@@ -93,6 +93,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
+		font-size: 5rem;
 	}
 	#icon {
 		width: 4rem;
