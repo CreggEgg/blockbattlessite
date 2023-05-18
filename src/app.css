@@ -1,30 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
 	font-family: "Red Hat Display", sans-serif;
 }
-html,
-body {
-	background-color: #000000;
-	color: #ffffff;
-
-	--bg: #000000;
-	--text: #ffffff;
-	--primary: #9d34da;
-	--secondary: #1a1a1a;
-	--accent: #bd73e8;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0px;
-	overflow-x: hidden;
+:root {
+	--bg-200: #3a2e3d;
+	--bg-600: #523758;
+	--bg-400: #3b333d;
+	--bg-500: #342b36;
 }
-a {
+body,
+html {
+	background-color: var(--bg-200);
+	overflow: hidden;
+	margin: 0px;
+}
+main {
+	display: flex;
+	flex-direction: row;
+}
+#slot-div {
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+nav {
+	display: flex;
+	height: 100%;
+
+	width: 20%;
+	background-color: var(--bg-400);
+	flex-direction: column;
+	gap: 0px;
+}
+nav > a {
+	display: grid;
+	place-items: center;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 5fr;
+	height: 3rem;
+	color: white;
 	font-weight: 700;
-	background: linear-gradient(0.25turn, var(--primary), var(--accent));
-	-webkit-background-clip: text;
-	color: transparent;
+	font-size: 1.2rem;
+	text-decoration: none;
+	background-color: var(--bg-600);
+	transition: background-color 0.2s ease-in-out 0s;
+}
+
+nav > a::before {
+	content: url("./info.svg");
+	width: 1.8rem;
+	height: 1.5rem;
+}
+
+nav > a:hover {
+	background-color: var(--bg-500);
 }
