@@ -12,7 +12,7 @@
 >
 	google.com
 </p>
-<Button
+<button
 	style="padding: 1rem 3rem;
 font-size: large; background-color: var(--secondary); cursor: {text == 'Copied'
 		? 'auto'
@@ -20,5 +20,5 @@ font-size: large; background-color: var(--secondary); cursor: {text == 'Copied'
 	on:click={() => {
 		navigator.clipboard.writeText(ip.innerText);
 		text = "Copied";
-	}}>{text}</Button
+	}}>{text}</button
 >
