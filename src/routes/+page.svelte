@@ -26,7 +26,7 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		background-image: url("lobby.jpg");
+		background-image: url("/lobby.jpg");
 		min-height: 100%;
 		height: 100%;
 		background-repeat: no-repeat;
