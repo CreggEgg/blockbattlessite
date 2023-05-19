@@ -10,11 +10,32 @@
 			<p class="name">Spartan</p>
 			<p class="name">Cregg</p>
 		</div>
+		<p>
+			Embark on an unforgettable journey in the thrilling world of
+			"BlockBattles," the captivating Minecraft minigame that draws inspiration
+			from the viral TikTok trend known as #blockbattles. Engage in
+			heart-pounding competitions as you strategically battle opponents,
+			determined to emerge victorious. Prepare for an adrenaline-fueled
+			experience as you navigate dynamic battlefields, skillfully manipulating
+			blocks to gain a strategic advantage. Showcase your lightning-fast
+			decision-making and cunning tactics to outsmart your foes in real-time.
+			With a wealth of diverse strategies and tactics at your disposal,
+			BlockBattles demands both skill and wit to claim triumph. Explore unique
+			mechanics, immerse yourself in objective-driven gameplay, and seize
+			valuable decks from defeated adversaries. Join the BlockBattles server now
+			at the IP address above and become part of a vibrant community. Don't
+			forget to follow us on social media for exciting updates, exclusive tips,
+			and engaging community interactions. Are you ready to embrace the
+			challenge and cement your legacy as the ultimate BlockBattles champion?
+		</p>
 		<div id="links">
-			<a href="/join-discord" target="_blank">Discord</a><a
-				href="https://youtube.com"
-				target="_blank">Youtube</a
-			><a href="https://tiktok.com" target="_blank">TikTok</a>
+			<a href="/join-discord" id="discord" target="_blank"
+				><img class="sm-logo" src="/discord.png" alt="Discord Logo" /></a
+			><a href="https://youtube.com" id="youtube" target="_blank"
+				><img class="sm-logo" src="/youtube.png" alt="Youtube Logo" /></a
+			><a href="https://tiktok.com" id="tiktok" target="_blank"
+				><img class="sm-logo" src="/tiktok.png" alt="Tiktok Logo" /></a
+			>
 		</div>
 	</div>
 </article>
@@ -27,8 +48,9 @@
 		justify-content: center;
 		text-align: center;
 		background-image: url("/lobby.jpg");
+
 		min-height: 100%;
-		height: 100%;
+		height: min-content;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
@@ -67,9 +89,17 @@
 		flex-direction: column;
 		align-items: center;
 		width: 60%;
-		height: 90%;
+		height: max(90%, min-content);
+		backdrop-filter: blur(10px);
 		background-color: rgb(0, 0, 0, 0.65);
 		border-radius: 25px;
+		margin-top: 15vh;
+		margin-bottom: 5vh;
+	}
+	p {
+		font-size: 1.5em;
+		width: 85%;
+		font-weight: 500;
 	}
 
 	#links {
@@ -77,7 +107,33 @@
 		margin-top: auto;
 		display: flex;
 		gap: 3rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 	#links > a {
+		background-color: black;
+		padding: 0.75rem 1.25rem;
+		border-radius: 25px;
+		transition: background 0.2s ease-in-out;
+		scale: 1;
+		transition: scale 0.2s ease-in-out;
+	}
+
+	#links > a:hover {
+		scale: 1.1;
+	}
+
+	#discord {
+		background: linear-gradient(0.25turn, #5865f2, black);
+	}
+	#youtube {
+		background: linear-gradient(0.25turn, red, black);
+	}
+	#tiktok {
+		background: linear-gradient(0.25turn, #00f2ea, black);
+	}
+
+	.sm-logo {
+		width: 30%;
 	}
 </style>
