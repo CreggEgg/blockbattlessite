@@ -50,7 +50,7 @@ nav > a {
 }
 
 nav > a::before {
-	content: url("./info.svg");
+	content: url("/info.svg");
 	width: 1.8rem;
 	height: 1.5rem;
 }
