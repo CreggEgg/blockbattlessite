@@ -1,0 +1,164 @@
+[
+	{
+		"snippet": "report zdemo_helloworld.\n\nwrite 'Hello World'.",
+		"lang": "ABAP"
+	},
+	{
+		"snippet": "BEGIN\nFILE F (KIND=REMOTE);\nEBCDIC ARRAY E [0:11];\nREPLACE E BY \"HELLO WORLD!\";\nWHILE TRUE DO\n BEGIN\n WRITE (F, *, E);\n END;\nEND.",
+		"lang": "ALGOL"
+	},
+	{ "snippet": "BEGIN { print \"Hello, world\" } ", "lang": "AWK" },
+	{
+		"snippet": " org 0x100 ; .com files always start 256 bytes into the segment\n\n ; int 21h is going to want...\n\n mov dx, msg ; the address of or message in dx\n mov ah, 9 ; ah=9 - \"print string\" sub-function\n int 0x21 ; call dos services\n\n mov dl, 0x0d ; put CR into dl\n mov ah, 2 ; ah=2 - \"print character\" sub-function\n int 0x21 ; call dos services\n\n mov dl, 0x0a ; put LF into dl\n mov ah, 2 ; ah=2 - \"print character\" sub-function\n int 0x21 ; call dos services\n\n mov ah, 0x4c ; \"terminate program\" sub-function\n int 0x21 ; call dos services\n\n msg db 'Hello again, World!$' ",
+		"lang": "Assembly x86"
+	},
+	{ "snippet": "10 PRINT \"Hello World!\"", "lang": "BASIC" },
+	{
+		"snippet": "import ballerina/io;\n\npublic function main() {\n io:println(\"Hello, World!\");\n}",
+		"lang": "Ballerina"
+	},
+	{ "snippet": "#!/bin/bash\necho \"Hello World\"", "lang": "Bash" },
+	{ "snippet": "output Greeting string = \"Hello world\"", "lang": "Bicep" },
+	{
+		"snippet": ">++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<+\n+.------------.>++++++[<+++++++++>-]<+.<.+++.------.--------.>>>++++[<++++++++>-\n]<+.",
+		"lang": "Brainfuck"
+	},
+	{
+		"snippet": "#include <stdio.h>\nint main() {\n // printf() displays the string inside quotation\n printf(\"Hello, World!\");\n return 0;\n}",
+		"lang": "C"
+	},
+	{
+		"snippet": "namespace HelloWorld\n{\n class Hello { \n static void Main(string[] args)\n {\n System.Console.WriteLine(\"Hello World!\");\n }\n }\n}",
+		"lang": "C#"
+	},
+	{
+		"snippet": "#include <iostream>\n\nint main() {\n std::cout << \"Hello World!\";\n return 0;\n}",
+		"lang": "C++"
+	},
+	{
+		"snippet": "IDENTIFICATION DIVISION.\nPROGRAM-ID. HELLOWRD.\n\nPROCEDURE DIVISION.\nDISPLAY \"HELLO WORLD\".\nSTOP RUN.",
+		"lang": "COBOL"
+	},
+	{ "snippet": "(println \"Hello World\")", "lang": "Clojure" },
+	{
+		"snippet": "hello = () ->\n print \"hello world\"\nhello()",
+		"lang": "Coffeescript"
+	},
+	{ "snippet": "(format t \"Hello, World!\")", "lang": "Common lisp" },
+	{
+		"snippet": "import std.stdio;\n\nvoid main()\n{\n writeln(\"Hello, World!\");\n}",
+		"lang": "D"
+	},
+	{ "snippet": "void main() {\n print('Hello, World!');\n}", "lang": "Dart" },
+	{ "snippet": "IO.puts(\"Hello world\")", "lang": "Elixir" },
+	{
+		"snippet": "module HelloWorld exposing (..)\nimport Html exposing (text)\nmain =\n text \"Hello, World!\"",
+		"lang": "Elm"
+	},
+	{
+		"snippet": "-module(hello).\n-export([hello_world/0]).\n\n\thello_world() -> io:fwrite(\"hello, world\\n\").",
+		"lang": "Erlang"
+	},
+	{ "snippet": "printfn \"Hello from F#\"", "lang": "F#" },
+	{
+		"snippet": "program hello\n print *, 'Hello, World!'\nend program hello",
+		"lang": "Fortran"
+	},
+	{
+		"snippet": "package main\nimport \"fmt\"\nfunc main() {\n fmt.Println(\"hello world\")\n}",
+		"lang": "Go"
+	},
+	{
+		"snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n\t<title>Hello world</title>\n</head>\n\n<body>\n\tHello World\n</body>\n\n</html>",
+		"lang": "HTML"
+	},
+	{
+		"snippet": "main :: IO ()\nmain = putStrLn \"Hello World\"",
+		"lang": "Haskell"
+	},
+	{
+		"snippet": "class HelloWorld {\n public static void main(String[] args) {\n System.out.println(\"Hello, World!\"); \n }\n}",
+		"lang": "Java"
+	},
+	{ "snippet": "console.log(\"hello world\");", "lang": "Javascript" },
+	{ "snippet": "\"Hello World\"", "lang": "Julia" },
+	{
+		"snippet": "fun main(args : Array<String>) {\n println(\"Hello, World!\")\n}",
+		"lang": "Kotlin"
+	},
+	{
+		"snippet": "HAI 1.2\n\tVISIBLE \"Hello, World!\"\nKTHXBYE",
+		"lang": "LOLCODE"
+	},
+	{ "snippet": "TO HELLO\n PRINT [Hello world]\n END", "lang": "Logo" },
+	{
+		"snippet": "function main()\n\tprint(\"Hello World\")\nend\nmain()",
+		"lang": "Lua"
+	},
+	{ "snippet": "type hello_world", "lang": "MATLAB" },
+	{
+		"snippet": "print_endline \"hello world\"\n\nlet () = print_endline \"hello world\"",
+		"lang": "Ocaml"
+	},
+	{
+		"snippet": "#import <Foundation/Foundation.h>\n\nint main(int argc, const char * argv[]) {\n @autoreleasepool {\n NSLog(@\"Hello, World!\");\n }\n return 0;\n}",
+		"lang": "Objective-c"
+	},
+	{ "snippet": "<?php\necho \"Hello World!\";\n?>", "lang": "PHP" },
+	{
+		"snippet": "program Hello;\nbegin\n writeln ('Hello, world.');\nend.",
+		"lang": "Pascal"
+	},
+	{
+		"snippet": "#!/usr/bin/perl\n \n# Modules used\nuse strict;\nuse warnings;\n \n# Print function \nprint(\"Hello World\\n\");",
+		"lang": "Perl"
+	},
+	{
+		"snippet": "Write-Host 'Hello, World!'\n'Hello, World!' | Write-Host",
+		"lang": "Powershell"
+	},
+	{ "snippet": "write('Hello World').", "lang": "Prolog" },
+	{
+		"snippet": "def hello:\n\tprint(\"Hello world\")\nhello()",
+		"lang": "Python"
+	},
+	{ "snippet": "print(\"Hello World\", quote=FALSE)", "lang": "R" },
+	{ "snippet": "puts \"Hello World\"", "lang": "Ruby" },
+	{
+		"snippet": "fn main() {\n\t println!(\"Hello World!\");\n}",
+		"lang": "Rust"
+	},
+	{
+		"snippet": "CREATE TABLE helloworld (phrase TEXT);\n.tables",
+		"lang": "SQL"
+	},
+	{
+		"snippet": "object Hello {\n def main(args: Array[String]) = {\n println(\"Hello, world\")\n }\n}",
+		"lang": "Scala"
+	},
+	{
+		"snippet": "(begin\n (display \"Hello, World!\")\n (newline))",
+		"lang": "Scheme"
+	},
+	{ "snippet": "Transcript show: 'Hello World'.", "lang": "Smalltalk" },
+	{
+		"snippet": "func greet() {\n\tprint(\"Hello World!\")\n}\ngreet()",
+		"lang": "Swift"
+	},
+	{
+		"snippet": "let message: string = 'Hello, World!';\nconsole.log(message);",
+		"lang": "Typescript"
+	},
+	{
+		"snippet": "Imports System\n\nModule Module1\n Sub Main()\n Console.WriteLine(\"Hello World!\")\n Console.ReadLine()\n End Sub\nEnd Module",
+		"lang": "Visual Basic"
+	},
+	{
+		"snippet": "(module\n ;; Imports from JavaScript namespace\n (import \"console\" \"log\" (func $log (param i32 i32))) ;; Import log function\n (import \"js\" \"mem\" (memory 1)) ;; Import 1 page of memory (54kb)\n \n ;; Data section of our module\n (data (i32.const 0) \"Hello World from WebAssembly!\")\n \n ;; Function declaration: Exported as helloWorld(), no arguments\n (func (export \"helloWorld\")\n i32.const 0 ;; pass offset 0 to log\n i32.const 29 ;; pass length 29 to log (strlen of sample text)\n call $log\n )\n)",
+		"lang": "Webassembly"
+	},
+	{
+		"snippet": "const std = @import(\"std\");\n\npub fn main() !void {\n const stdout = std.io.getStdOut().writer();\n try stdout.print(\"Hello, {s}!\\n\", .{\"world\"});\n}",
+		"lang": "Zig"
+	}
+]
